@@ -5,7 +5,7 @@ services:
     image: postgres:latest
     container_name: postgres
     environment:
-      POSTGRES_DB: postgres
+      POSTGRES_DB: ramzidb
       POSTGRES_USER: ramzi
       POSTGRES_PASSWORD: ramzi
     ports:
