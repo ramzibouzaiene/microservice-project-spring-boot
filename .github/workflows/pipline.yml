@@ -14,9 +14,11 @@ jobs:
 
     steps:
       - name: Checkout Repository
+        # Step 1: Checks out the source code from the repository
         uses: actions/checkout@v2
 
       - name: Set up JDK 17
+        # Step 2: Sets up JDK 17 for the build process
         uses: actions/setup-java@v2
         with:
           java-version: '17'
@@ -24,6 +26,7 @@ jobs:
           cache: maven
 
       - name: Cache Maven dependencies
+        # Step 3: Caches Maven dependencies to speed up builds
         uses: actions/cache@v2
         with:
           path: ~/.m2/repository
@@ -32,18 +35,22 @@ jobs:
             maven-
 
       - name: Build with Maven
+        # Step 4: Builds the project using Maven
         run: |
           mvn clean install --batch-mode --errors
 
       - name: Run Tests
+        # Step 5: Runs tests using Maven
         run: |
           mvn test --batch-mode --errors
 
       - name: Package Artifact
+        # Step 6: Packages the project artifacts (e.g., JAR file)
         run: mvn package --batch-mode --errors
         if: success()
 
       - name: Archive Artifacts
+        # Step 7: Archives the 'target/' directory as an artifact
         uses: actions/upload-artifact@v2
         with:
           name: target
