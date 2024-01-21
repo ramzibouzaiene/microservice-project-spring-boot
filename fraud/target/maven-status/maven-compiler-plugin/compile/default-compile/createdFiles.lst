@@ -1,0 +1,7 @@
+com\ramzibz\fraud\FraudApplication.class
+com\ramzibz\fraud\FraudCheckResponse.class
+com\ramzibz\fraud\FraudCheckService.class
+com\ramzibz\fraud\FraudController.class
+com\ramzibz\fraud\FraudCheckHistory.class
+com\ramzibz\fraud\FraudCheckHistory$FraudCheckHistoryBuilder.class
+com\ramzibz\fraud\FraudCheckHistoryRepository.class
