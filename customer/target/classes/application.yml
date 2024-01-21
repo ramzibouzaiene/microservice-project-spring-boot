@@ -4,3 +4,13 @@ server:
 spring:
   application:
     name: customer
+  datasource:
+    username: 'ramzi'
+    url: jdbc:postgresql://localhost:5432/customer
+    password: 'ramzi'
+    driverClassName: org.postgresql.Driver
+    jpa:
+      properties:
+        hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+        hibernate.format_sql: 'true'
+        hibernate.ddl-auto: update

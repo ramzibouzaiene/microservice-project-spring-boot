@@ -1,1 +1,7 @@
+com\ramzibz\customer\CustomerService.class
+com\ramzibz\customer\CustomerController.class
+com\ramzibz\customer\Customer$CustomerBuilder.class
+com\ramzibz\customer\CustomerRepository.class
+com\ramzibz\customer\CustomerRegistrationRequest.class
+com\ramzibz\customer\Customer.class
 com\ramzibz\customer\CustomerApplication.class
